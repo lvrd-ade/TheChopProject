@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Messages from '@/components/messages/messages';
+
+
 export default function SignIn() {
     return (<>
         <Head>
@@ -33,10 +36,14 @@ export default function SignIn() {
                 placeholder="••••••••"
                 required
             />
+            <p><Link href="/forgot-password" className='underline text-blue-400'>Forgot Password?</Link></p>
+
             <button className="bg-blue-700 rounded-md px-4 py-2 text-white mb-2 ">
                 Sign In
             </button>
             <p>Don&apos;t have an account? <Link href="/sign-up" className='underline text-blue-400'>Signup for an account</Link></p>
+
+            <Messages/>
         </form>
     </>)    
 }

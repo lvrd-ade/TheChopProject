@@ -33,10 +33,10 @@ export default function SignIn() {
                 placeholder="••••••••"
                 required
             />
-            <button className="bg-blue-700 rounded-md px-4 py-2 text-white mb-2">
+            <button className="bg-blue-700 rounded-md px-4 py-2 text-white mb-2 ">
                 Sign In
             </button>
-            <p>Don&apos;t have an account? <Link href="/sign-up">Signup for an account</Link></p>
+            <p>Don&apos;t have an account? <Link href="/sign-up" className='underline text-blue-400'>Signup for an account</Link></p>
         </form>
     </>)    
 }

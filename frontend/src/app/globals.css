@@ -23,11 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-a {
-  color: lightblue;
-  text-decoration: underline;
+  overflow:auto;
 }
 
 .ellipse-1, .ellipse-2, .ellipse-3 {
@@ -36,7 +32,7 @@ a {
   filter: blur(10vw);
   width: 20vw;
   height: 20vw;
-  z-index: 1; /* Adjust the z-index to make sure the ellipses appear above the background */
+  z-index: 30; /* Adjust the z-index to make sure the ellipses appear above the background */
 }
 
 .ellipse-1 {
